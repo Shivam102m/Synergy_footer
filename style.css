@@ -11,15 +11,23 @@ body{
 .container{
 	
 	max-width: 1170px;
-	margin:auto;
+	
 }
+
 .row{
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 40px ;
 	flex-wrap: wrap;
+}
+.logo {
+   display: block;
+   left: 0px;
 }
  
 td{
 	padding: 5px;
+
 }
 ul{
 	list-style: none;
@@ -28,11 +36,7 @@ ul{
 	background-color: #24262b;
     padding: 70px 0;
 }
-.footer-col{
-	column-gap: 40px;
-   width: 25%;
-   padding: 0 15px;
-}
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -51,6 +55,14 @@ ul{
 	box-sizing: border-box;
 	width: 50px;
 }
+
+.footer-col{
+	column-gap: 40px;
+   width: 25%;
+   padding: 0 15px;
+   display: block;
+   right: 0%;
+}
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -68,6 +80,13 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
+
+.social-links {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 20px;
+}
+
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
